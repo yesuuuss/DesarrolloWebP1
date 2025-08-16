@@ -2,10 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Perfil usuario simple</title>
+    <title>Mi perfil</title>
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="bg-light">
@@ -22,11 +22,53 @@
     <hr>
     <h4>Datos Personales</h4>
     <table class="table table-bordered table-modern">
-      <tr><th>Nombre</th><td>Ejemplo</td></tr>
-      <tr><th>Rol</th><td>Ejemplo</td></tr>
-      <tr><th>Email</th><td>ejemplo@ejemplo.com</td></tr>
+      <tr><th>Nombre</th><td>Jesus Palma</td></tr>
+      <tr><th>Rol</th><td>Ingeniero en sistemas</td></tr>
+      <tr><th>Email</th><td>jesupalma9@gmail.com.com</td></tr>
     </table>
 
+    <h4>Habilidades</h4>
+    <ul id="lista-habilidades">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    
+     <h4>Panel de prueba jeje sjdfasf</h4>
+    <input type="color" id="color-picker" value="#e8f0fe">
+    <button id="btn-aplicar-color" class="btn btn-success">aplica el color?</button>
+    <div id="panel-color" class="p-3 mt-2 border">Panel con color fijo</div>
+    <hr>
+
+    <h4>Formulario de Contacto</h4>
+    <form id="form-contacto">
+      <input type="text" id="nombre" placeholder="Nombre" class="form-control mb-2">
+      <input type="email" id="correo" placeholder="Correo" class="form-control mb-2">
+      <textarea id="mensaje" class="form-control mb-2" placeholder="Mensaje"></textarea>
+      <input type="submit" class="btn btn-primary" value="Enviar">
+      <button type="button" id="btn-agregar-habilidad" class="btn btn-outline-primary">Agregar</button>
+      <div id="errores-form" class="mt-2"></div>
+    </form>
+  </div>
+   <h4>Primera prueba de api ajax</h4>
+   <p>Clic para validar si funciona jeje<code>mensaje</code>.</p>
+    <button id="btn-llamar-api" class="btn btn-info">Llamar API</button>
+
+    <div id="api-resultado" class="mt-3" style="display:none;">
+      <div class="alert alert-primary" role="alert">
+        <strong>Mensaje:</strong> <span id="api-mensaje"></span>
+      </div>
+    </div>
+
+    <div id="api-error" class="mt-3" style="display:none;">
+      <div class="alert alert-danger" role="alert">
+       NO SE PUDO LLAMAR LA API :c
+      </div>
+    </div>
+  </div>
 
 
+ <script src="js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </html>
