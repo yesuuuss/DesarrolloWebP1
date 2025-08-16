@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo API REST</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+  <main class="container py-4">
+    <h1 class="title-decor">Consumo de API AJAX </h1>
+    <p>Click para obtener<code>mensaje</code> del endpoint.</p>
+
+    <div class="card p-3">
+      <div class="d-flex gap-2">
+        <button id="btn-llamar-api" class="btn btn-info">Llamar API</button>
+        <a class="btn btn-outline-secondary" href="index.html">Volver</a>
+      </div>
+
+      <div id="api-resultado" class="mt-3 d-none">
+        <div class="alert alert-primary" role="alert">
+          <strong>Mensaje:</strong> <span id="api-mensaje"></span>
+        </div>
+      </div>
+
+      <div id="api-error" class="mt-3 d-none">
+        <div class="alert alert-danger" role="alert">
+          Error al llamar la API.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
